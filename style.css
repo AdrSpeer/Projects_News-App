@@ -1,0 +1,104 @@
+Basics * {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2vw;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+
+#text-input {
+  width: 75%;
+}
+
+form {
+  display: grid;
+  gap: 0.5vw;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6vw;
+  border: 1px solid black;
+  padding: 0.5vw;
+  width: 25vw;
+}
+
+.output {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 3vw;
+  margin: 0 2vw 0 2vw;
+}
+
+.output div {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vw;
+}
+.output div:hover {
+  scale: 1.1;
+}
+
+.output div img {
+  width: 50%;
+  height: 50%;
+}
+.output div a {
+  color: gray;
+  border: solid 1px gray;
+  padding: 1vw;
+  text-decoration: none;
+}
+.output div a:hover {
+  background-color: black;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 700;
+  color: red;
+}
+
+input[type="submit"] {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 25%;
+  margin-left: 35%;
+}
+input[type="submit"]:hover {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 1rem;
+  scale: 1.1;
+}
+#text-input {
+  width: 95%;
+}
